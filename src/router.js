@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(), // เปลี่ยนจาก createWebHistory เป็น createWebHashHistory
+    history: createWebHashHistory(), // ใช้ Hash Mode
     routes
 });
 
