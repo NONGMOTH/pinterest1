@@ -1,14 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from './views/HomeView.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'; // ใช้ createWebHashHistory
+import HomeView from './views/HomeView.vue';
 import ImageView from './views/ImageView.vue';
 
 const routes = [
     { path: '/', component: HomeView },
-    { path: '/image/:id', component: ImageView, name: 'image' } // ชื่อ 'image' ใช้ใน goToImage
+    { path: '/image/:id', component: ImageView, name: 'image' }
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(), // เปลี่ยนจาก createWebHistory เป็น createWebHashHistory
     routes
 });
 

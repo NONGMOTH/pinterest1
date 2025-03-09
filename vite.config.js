@@ -3,5 +3,5 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/Intro_project/',  // ต้องมี "/" นำหน้า
+  base: '/Intro_project/',  // กำหนด base path ให้ตรงกับชื่อ repository ของคุณ
 });
