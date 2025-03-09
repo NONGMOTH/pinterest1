@@ -7,7 +7,7 @@
             class="image-container"
             @click="goToImage(num)"
             >
-            <img :src="`/images/${num}.jpg`" :alt="`Image ${num}`" @error="handleImageError(num)" />
+                <img :src="`/images/${num}.jpg`" :alt="`Image ${num}`" @error="handleImageError(num)" />
                 <div class="save-button" @click.stop="saveImage(num)">
                     บันทึก
                 </div>
@@ -64,7 +64,6 @@ const saveImage = (num) => {
     document.body.removeChild(link); // ลบ element ออกหลังดาวน์โหลด
 };
 </script>
-
 
 <style scoped>
 .content {
