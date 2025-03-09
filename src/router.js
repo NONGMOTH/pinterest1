@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'; // ใช้ createWebHashHistory
+import { createRouter, createWebHistory } from 'vue-router'; // ใช้ createWebHistory แทน createWebHashHistory
 import HomeView from './views/HomeView.vue';
 import ImageView from './views/ImageView.vue';
 
@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(), // ใช้ Hash Mode
+    history: createWebHistory(), // ใช้ History Mode
     routes
 });
 
