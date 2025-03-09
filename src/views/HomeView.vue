@@ -7,7 +7,7 @@
             class="image-container"
             @click="goToImage(num)"
             >
-                <!-- แก้ไขตรงนี้: ใช้ CP_CHANGEs-976.jpg แทน default.jpg เมื่อเกิด error -->
+                <!-- ใช้ CP_CHANGEs-976.jpg แทน default.jpg เมื่อเกิด error -->
                 <img :src="imageExists[num - 1] ? `/images/${num}.jpg` : '/images/CP_CHANGEs-976.jpg'" :alt="`Image ${num}`" @error="handleImageError(num)" />
                 <div class="save-button" @click.stop="saveImage(num)">
                     บันทึก
